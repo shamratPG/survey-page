@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="main">
+        <header class="transpatent-bg">
+            <h1 id="title">
+                Traveler's Survey
+            </h1>
+            <p id="description">
+                Let us know where you would like to travel next.
+            </p>
+        </header>
+
+        <form id="survey-form" class="transpatent-bg">
+
+            <!-- Name Area-->
+            <div class="entry-groups" id="name-area">
+                <label class="block" id="name-label" for="name">Your Full Name: </label>
+                <input class="entry-field" id="name" type="text" placeholder="Your name goes here">
+            </div>
+
+            <!-- Email Area-->
+            <div class="entry-groups" id="email-area">
+                <label class="block" id="email-label" for="email">
+                    Your Email:
+                </label>
+                <input class="entry-field" id="email" type="email" placeholder="Your email goes here">
+            </div>
+
+            <!-- Number Area-->
+            <div class="entry-groups" id="age-area">
+                <label class="block" id="number-label" for="number">
+                    Your Age:
+                </label>
+                <input class="entry-field" id="number" type="number" placeholder="Your age goes here" min="15" max="70">
+            </div>
+
+            <!-- Dropdown Area-->
+            <div class="entry-groups" id="dropdown-area">
+                <label class="block" id="dropdown-label" for="dropdown">
+                    Where you would like to travel next?
+                </label>
+                <select class="entry-field" id="dropdown" name="Place">
+                    <option value="none" disabled selected>Select your option</option>
+                    <option value="Bali">Bali</option>
+                    <option value="St.Martin">St. Martin</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Pataya">Pataya</option>
+                    <option value="Cox's bazar">Cox's Bazar</option>
+                </select>
+            </div>
+
+            <!-- Radio Area-->
+            <div class="entry-groups" id="radio-area">
+                <p>Plese select how you would like to travel:</p>
+                <div class="container">
+                    <input type="radio" id="air" value="air" name="vehicle">
+                    <label class="pointer" for="air">By Air</label>
+                </div>
+
+                <div class="container">
+                    <input type="radio" value="water" id="water" name="vehicle">
+                    <label class="pointer" for="water">By Water</label>
+                </div>
+
+                <div class="container">
+                    <input type="radio" value="road" id="road" name="vehicle">
+                    <label class="pointer" for="road">By Road</label>
+                </div>
+
+                <div class="container">
+                    <input type="radio" value="train" id="train" name="vehicle">
+                    <label class="pointer" for="train">By Train</label>
+                </div>
+
+            </div>
+
+            <!--Check Box Area-->
+            <div class="entry-groups" id="checkbox-area">
+                <p>Activities you want to do while traveling:</p>
+                <div class="container">
+                    <input type="checkbox" id="surfing" value="surfing" name="activities">
+                    <label class="pointer" for="surfing">Surfing</label>
+                </div>
+
+
+                <div class="container">
+                    <input type="checkbox" id="para-glyding" value="para-glyding" name="activities">
+                    <label class="pointer" for="para-glyding">Para-glyding</label>
+                </div>
+
+
+                <div class="container">
+                    <input type="checkbox" id="scuba-diving" value="scuba-diving" name="activities">
+                    <label class="pointer" for="scuba-diving">Scuba-diving</label>
+                </div>
+
+            </div>
+
+            <!--Text Area-->
+            <div class="entry-groups" id="text-area">
+                <label class="block" for="text-comment">
+                    Let us know any of your questions or comments:
+                </label>
+                <textarea id="text-comment" class="entry-field" placeholder="Your questions or comments"></textarea>
+            </div>
+
+            <!--Submit Area-->
+            <div class="entry-groups" id="submit-area">
+                <input class="entry-field" type="submit" id="submit">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
