@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgba(40, 193, 163, 0.5);
+    background-image: url("https://shamratopu.github.io/Images/travel.jpg");
+    background-repeat: no-repeat;
+    background-size: 190%;
+    color: white;
+    font-family: arial;
+}
+
+header {
+    text-align: center;
+}
+
+.transpatent-bg {
+    width: 60%;
+    margin: 20px auto;
+    background-color: rgba(43, 46, 44, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.entry-field {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 1em;
+}
+
+.entry-field:focus {
+    outline: 2px solid rgba(40, 193, 163, 0.5);
+}
+
+.entry-groups {
+    margin: 20px;
+}
+
+.block {
+    display: block;
+}
+
+input[type='radio'],
+input[type='checkbox'] {
+    margin: 0 20px 0 0;
+    cursor: pointer;
+
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.container {
+    padding: 3px;
+}
+
+#text-comment {
+    height: 100px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 1em;
+    font-family: arial;
+}
+
+#submit {
+    background: rgba(40, 80, 250);
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+}
